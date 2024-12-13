@@ -7,8 +7,8 @@
 	<meta name="theme-color" content="#000000" />
 	<meta name="description" content="Reveal JS Presentation" />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/dracula.min.css"
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/moon.min.css"
 		  id="theme" />
 
 <!--	<link rel="stylesheet"-->
@@ -17,6 +17,19 @@
 <!--		  crossorigin="anonymous" />-->
 
 	<title>Reveal JS - CDN Example - Markdown</title>
+
+	<style>
+		div.chart {
+			height: 500px;
+		}
+		.dark-block {
+			padding: 15px 50px;
+			background: rgba(0, 43, 54, 0.6);
+		}
+		.big {
+			font-size: 2em;
+		}
+	</style>
 </head>
 
 <body>
@@ -25,35 +38,50 @@
 
 		<section data-markdown>
 				<textarea data-template>
-					# Simple Markdown
-					## Bayes' theorem
-					$$
-					P(A\mid B) = \frac{P(B \mid A) \\; P(A)}{P(B)}
-					$$
+					# KRAKOWSKIE
+					## geocachingowe
+					## podsumowanie roku
+					# 2024
 				</textarea>
 		</section>
 
-		<section>
-			<h1>cośtam</h1>
-			<canvas data-chart="line" >
-				<!--
-                {
-                 "data": {
-                  "labels": ["January"," February"," March"," April"," May"," June"," July"],
-                  "datasets":[
-                   {
-                    "data":[65,59,80,81,56,55,40],
-                    "label":"My first dataset","backgroundColor":"rgba(20,220,220,.8)"
-                   },
-                   {
-                    "data":[28,48,40,19,86,27,90],
-                    "label":"My second dataset","backgroundColor":"rgba(220,120,120,.8)"
-                   }
-                  ]
-                 }
-                }
-                -->
-			</canvas>
+		<section data-auto-animate>
+			<h1>coś</h1>
+			<img src="images/01/1ac8dcc4-c5f1-4cb9-8957-17309ea2f9af.jpg" alt="">
+		</section>
+		<section data-auto-animate>
+			<h1>coś</h1>
+			<img src="images/01/bece9992-1977-46e0-8adc-50e843c2665f.jpg" alt="">
+		</section>
+
+		<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-auto-animate>
+				<textarea data-template>
+					# STYCZEŃ
+
+					_Jakiś mądry header, który będzie zabawny czy coś_
+
+					--
+
+					<!-- .slide:  data-auto-animate data-background="images/01/200.webp" -->
+					# 18-tka nemrodka <!-- .element: class="dark-block r-fit-text" -->
+
+					--
+
+					<!-- .slide:  data-auto-animate -->
+					# 18-tka nemrodka
+					## 4 stycznia - [GCAJ1VX](https://coord.info/GCAJ1VX)
+
+					![](images/01/1ac8dcc4-c5f1-4cb9-8957-17309ea2f9af.jpg)
+
+					--
+
+					<!-- .slide:  data-auto-animate -->
+					# 18-tka nemrodka
+					## 4 stycznia - [GCAJ1VX](https://coord.info/GCAJ1VX)
+
+					![](images/01/bece9992-1977-46e0-8adc-50e843c2665f.jpg)
+
+				</textarea>
 		</section>
 
 		<section data-markdown data-separator="---">
@@ -62,6 +90,12 @@
 					---
 					## First
 					Slide 1
+					<div class="chart">
+						<canvas data-chart="bar">
+							Month, January, February, March, April, May, June, July
+							My first dataset, 65, 59, 80, 81, 56, 55, 40
+						</canvas>
+					</div>
 					---
 					## Second
 					Slide 2
@@ -161,17 +195,19 @@
 	</div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/markdown/markdown.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/math/math.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/notes/notes.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/highlight/highlight.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/markdown/markdown.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/math/math.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/highlight.js"></script>
 <!-- Chart plugin -->
 <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chart/plugin.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
 
 <script>
 	Reveal.initialize({
+		width: 1280,
+		height: 1050,
 		controls: true,
 		progress: true,
 		history: true,
@@ -183,16 +219,29 @@
 
 		chart: {
 			defaults: {
+				maintainAspectRatio: false,
+				responsive: true,
 				color: 'lightgray', // color of labels
+				font: { size: 35 },
 				scale: {
 					beginAtZero: true,
-					ticks: { stepSize: 1 },
-					grid: { color: "lightgray" } , // color of grid lines
+					// ticks: { stepSize: 1 },
+					grid: { color: "#333333" } , // color of grid lines
 				},
 			},
 			line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] },
 			bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]},
 			pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+			plugins: {
+				legend: {
+					labels: {
+						// This more specific font property overrides the global property
+						font: {
+							size: 34
+						}
+					}
+				}
+			}
 		},
 	});
 </script>
