@@ -20,7 +20,7 @@
 
     <style>
         div.chart {
-            height: 500px;
+            height: 600px;
         }
 
         .dark-block {
@@ -72,6 +72,18 @@
             margin-top: -60px;
         }
 
+        .source a {
+            font-size: 0.6em;
+            color: #888;
+        }
+
+        .smile {
+            background-image: url(https://www.geocaching.com/account/app/ui-icons/icons/log-types/2.svg);
+            background-size: contain;
+            display: inline-block;
+            height: .8em;
+            width: .8em;
+        }
 
     </style>
 </head>
@@ -175,58 +187,83 @@
         </section>
 
         <section>
-            <h1>Eventy 2024</h1>
-            <h3>Liczba eventów w Krakowie</h3>
-            <p class="fragment number custom blur">146</p>
-            <h3>Liczba eventów w Małopolsce</h3>
-            <p class="fragment number custom blur">201</p>
-            <h3>Liczba CITO w Małopolsce</h3>
-            <p class="fragment number custom blur">12</p>
+
+            <section>
+                <h1>Eventy 2024</h1>
+                <h3>Liczba eventów w Krakowie</h3>
+                <p class="fragment number custom blur">146</p>
+                <h3>Liczba eventów w Małopolsce</h3>
+                <p class="fragment number custom blur">201</p>
+                <h3>Liczba CITO w Małopolsce</h3>
+                <p class="fragment number custom blur">12</p>
+            </section>
+            <section>
+                <h1>
+                    <span class="smile"></span>
+                    (eventy)
+                </h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Nick, Dominisia_krk, kranfagel, m2mPL, dadoskawina, Fishu, Emson_, Qinka
+                        Liczba attendów, 109, 100, 97, 94, 93, 84, 82
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/Top?profile_country=Poland&profile_region=Ma%C5%82opolskie&type%5B%5D=Event+Cache&fromyyyy=2024&frommm=1&fromdd=1&toyyyy=2024&tomm=12&todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
         </section>
 
         <section>
-            <h2>gorgony</h2>
-            <img src="https://s3.amazonaws.com/gs-geo-images/1227f051-f2ed-4aae-bfbc-e990088f6ad2.jpg" alt="gorgony"
-                 class="avatar">
-            <blockquote class="fragment custom blur big">
-                Skończyłem ciągłość :) <br>(ale nie wiem ile dni, coś koło 1099 dni)
-            </blockquote>
-        </section>
 
-        <section>
-            <h2>marcin3243</h2>
-            <img src="https://img.geocaching.com/user/square250/b795ac96-6989-4614-9fca-05a06bf1fd8f.jpg"
-                 class="avatar">
-            <blockquote class="fragment custom blur big">
-                Przyjechałem na wycieczkę do Krakowa!
-            </blockquote>
-        </section>
+            <section>
+                <h2>gorgony</h2>
+                <img src="https://s3.amazonaws.com/gs-geo-images/1227f051-f2ed-4aae-bfbc-e990088f6ad2.jpg" alt="gorgony"
+                     class="avatar">
+                <blockquote class="fragment custom blur big">
+                    Skończyłem ciągłość :) <br>(ale nie wiem ile dni, coś koło 1099 dni)
+                </blockquote>
+            </section>
 
-        <section>
-            <h2>kranfagel</h2>
-            <img src="https://img.geocaching.com/user/square250/b0eedbb6-0603-43b7-a738-2fa25add3eb6.png"
-                 class="avatar">
-            <blockquote class="fragment custom blur big">
-                Wyciągnąłem 19 dni ciągłości FTFów :D
-            </blockquote>
-        </section>
+            <section>
+                <h2>marcin3243</h2>
+                <img src="https://img.geocaching.com/user/square250/b795ac96-6989-4614-9fca-05a06bf1fd8f.jpg"
+                     class="avatar">
+                <blockquote class="fragment custom blur big">
+                    Przyjechałem na wycieczkę do Krakowa!
+                </blockquote>
+            </section>
 
-        <section>
-            <h2>Kosoff</h2>
-            <img src="https://img.geocaching.com/user/square250/51c6efc9-c664-4dd8-a0da-be8a93185cca.png"
-                 class="avatar">
-            <blockquote class="fragment custom blur big">
-                Odwiedziłem siedzibę geocachingu w Seattle :D
-            </blockquote>
-        </section>
+            <section>
+                <h2>kranfagel</h2>
+                <img src="https://img.geocaching.com/user/square250/b0eedbb6-0603-43b7-a738-2fa25add3eb6.png"
+                     class="avatar">
+                <blockquote class="fragment custom blur big">
+                    Wyciągnąłem 19 dni ciągłości FTFów :D
+                </blockquote>
+            </section>
 
-		<section>
-            <h2>Milk_Bandit</h2>
-            <img src="https://img.geocaching.com/user/square250/51c6efc9-c664-4dd8-a0da-be8a93185cca.png"
-                 class="avatar">
-            <blockquote class="fragment custom blur big">
-                Zdobyłem 1000 keszy!
-            </blockquote>
+            <section>
+                <h2>Kosoff</h2>
+                <img src="https://img.geocaching.com/user/square250/51c6efc9-c664-4dd8-a0da-be8a93185cca.png"
+                     class="avatar">
+                <blockquote class="fragment custom blur big">
+                    Odwiedziłem siedzibę geocachingu w Seattle :D
+                </blockquote>
+            </section>
+
+            <section>
+                <h2>Milk_Bandit</h2>
+                <img src="https://img.geocaching.com/user/square250/ff56c826-90ba-4153-95a3-4ea184f103a1.jpg"
+                     class="avatar">
+                <blockquote class="fragment custom blur big">
+                    Zdobyłem 1000 keszy!
+                </blockquote>
+            </section>
+
         </section>
 
         <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-auto-animate>
@@ -240,28 +277,230 @@
 					<!-- .slide:  data-auto-animate data-background="images/01/200.webp" -->
 					# 18-tka nemrodka <!-- .element: class="dark-block r-fit-text" -->
 
+					--
+
+					# 29 lutego
+
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Dn3Ljsk6Oxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
 				</textarea>
         </section>
 
-        <section data-markdown data-separator="---">
-				<textarea data-template>
-					# Slides are separated by three dashes
-					---
-					## First
-					Slide 1
-					<div class="chart">
-						<canvas data-chart="bar">
-							Month, January, February, March, April, May, June, July
-							My first dataset, 65, 59, 80, 81, 56, 55, 40
-						</canvas>
-					</div>
-					---
-					## Second
-					Slide 2
-					---
-					## Third
-					Slide 3
-				</textarea>
+        <section>
+            <section>
+                <h2>Project-GC</h2>
+                <img src="https://cdn2.project-gc.com/images/pgc-logo/logo-modern-j3-transparent-2-40px.png"
+                     style="width: 700px"
+                     class="avatar">
+                <blockquote class="fragment custom blur big">
+                    Remember that the Geocaching game/sport/hobby is not about quantity, but quality. :)
+                </blockquote>
+            </section>
+            <section>
+                <h1>
+                    <span class="smile"></span>
+                </h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Nick, dadoskawina, marcin3243, kranfagel, holoskawina, m2mPL, Fishu, Emson_
+                        Liczba znalezień, 6315, 2764, 2339, 2339, 2017, 1989, 1793
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/Top?profile_country=Poland&profile_region=Ma%C5%82opolskie&fromyyyy=2024&frommm=1&fromdd=1&toyyyy=2024&tomm=12&todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h1>
+                    <span class="smile"></span>
+                    krakowskich skrytek
+                </h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Nick, ???, marcin3243, Emson_, emode, Prezes201, Amalteaa, Dominisia_krk
+                        Liczba znalezień, 595, 520, 502, 442, 412, 409, 401
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/Top?country=Poland&region=Ma%C5%82opolskie&county=Krak%C3%B3w&fromyyyy=2024&frommm=1&fromdd=1&toyyyy=2024&tomm=12&todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h1>
+                    <span class="smile"></span>
+                    krakowskich skrytek
+                </h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Nick, falcon1983pl, marcin3243, Emson_, emode, Prezes201, Amalteaa, Dominisia_krk
+                        Liczba znalezień, 595, 520, 502, 442, 412, 409, 401
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/Top?country=Poland&region=Ma%C5%82opolskie&county=Krak%C3%B3w&fromyyyy=2024&frommm=1&fromdd=1&toyyyy=2024&tomm=12&todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h1>
+                    <span class="smile"></span>
+                    multaczków
+                </h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Nick, dadoskawina, Fishu, m2mPL, kranfagel, Krzosz, emode, Amaltea
+                        Liczba znalezień, 180, 145, 144, 140, 112, 107, 107
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/Top?profile_country=Poland&profile_region=Ma%C5%82opolskie&type%5B%5D=Multi-cache&fromyyyy=2024&frommm=1&fromdd=1&toyyyy=2024&tomm=12&todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h1>
+                    Założone eventy
+                </h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Nick, Dominisia_krk, Emson_, kranfagel, barucci, Piętaszek, soratte
+                        Liczba eventów, 25, 24, 23, 13, 8, 7
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/TopHidden?profile_name=kranfagel&profile_country=Poland&profile_region=Ma%C5%82opolskie&type%5B%5D=Event+Cache&hidden_fromyyyy=2024&hidden_frommm=1&hidden_fromdd=1&hidden_toyyyy=2024&hidden_tomm=12&hidden_todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h1>
+                    Założone kesze
+                </h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Nick, kranfagel, Kosoff, Leon17171717, xSzaryy, Doctor_on_bike, Z-DNA
+                        Liczba eventów, 85, 55, 27, 27, 26, 25
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/TopHidden?https://project-gc.com/Statistics/TopHidden?profile_name=kranfagel&profile_country=Poland&profile_region=Ma%C5%82opolskie&type%5B%5D=Cache+In+Trash+Out+Event&type%5B%5D=Earthcache&type%5B%5D=GPS+Adventures+Exhibit&type%5B%5D=Giga-Event+Cache&type%5B%5D=Groundspeak+Block+Party&type%5B%5D=Groundspeak+HQ&type%5B%5D=Groundspeak+Lost+and+Found+Celebration&type%5B%5D=Letterbox+Hybrid&type%5B%5D=Locationless+%28Reverse%29+Cache&type%5B%5D=Lost+and+Found+Event+Cache&type%5B%5D=Mega-Event+Cache&type%5B%5D=Multi-cache&type%5B%5D=Project+APE+Cache&type%5B%5D=Traditional+Cache&type%5B%5D=Unknown+Cache&type%5B%5D=Virtual+Cache&type%5B%5D=Webcam+Cache&type%5B%5D=Wherigo+Cache&hidden_fromyyyy=2024&hidden_frommm=1&hidden_fromdd=1&hidden_toyyyy=2024&hidden_tomm=12&hidden_todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h1>FTFy</h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Nick, dadoskawina, kranfagel, holoskawina, wiewiórka500, Dominisia_krk, Qinka, Emson_
+                        Liczba FTFów, 259, 203, 199, 101, 90, 84, 82
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/TopFTF?profile_name=kranfagel&profile_country=Poland&profile_region=Ma%C5%82opolskie&fromyyyy=2024&frommm=1&fromdd=1&toyyyy=2024&tomm=12&todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h1>FTFy w Krakowie</h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Nick, kranfagel, udar2, marcin3243, Quard32, m2mPL, Fishu, holoskawina
+                        Liczba FTFów, 39, 26, 25, 24, 18, 18, 18
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/TopFTF?profile_name=kranfagel&country=Poland&region=Ma%C5%82opolskie&county=Krak%C3%B3w&fromyyyy=2024&frommm=1&fromdd=1&toyyyy=2024&tomm=12&todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h1>FTFy na virtualach 👻</h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Nick, kranfagel, kara-kum, wiewiórka-500, m2mPL, holoskawina, Fishu
+                        Liczba FTFów, 5, 3, 2, 2, 2, 2
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/TopFTF?profile_name=kranfagel&country=Poland&region=Ma%C5%82opolskie&county=Krak%C3%B3w&fromyyyy=2024&frommm=1&fromdd=1&toyyyy=2024&tomm=12&todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h1><span class="smile"></span> keszy w Małopolsce</h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Kesz, GC23N23 Na rozstaju, GCAJJKX Smok 🐉 The dragon, GC891V 2.1👻Eros bendato ️🗿, GC9XA6J Mały Rynek, GC2CZCX Wawel, GC4WXGF Stara synagoga
+                        Liczba znalezień, 1503, 973, 935, 874, 850, 718
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/TopLoggedCaches?country=Poland&region=Ma%C5%82opolskie&fromyyyy=2024&frommm=1&fromdd=1&toyyyy=2024&tomm=12&todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h1 style="font-size: 3.5em "><span class="smile"></span> keszy z 2024 w Małopolsce</h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Kesz, GCAJJKX Smok 🐉 The dragon, GCAQJ1X Mosty ... Ojca Bernatka, GCAJK7A Wieliczka (Virtual Reward 4.0) PL/EN, GCAHKRK Kraków's GeoCachers Welcome You!, GCAQJ2F Mosty ... Józefa Piłsudskiego, GCAP0CY Stopka Królowej Jadwigi
+                        Liczba znalezień, 973, 395, 336, 312, 229, 220
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/TopLoggedCaches?country=Poland&region=Ma%C5%82opolskie&fromyyyy=2024&frommm=1&fromdd=1&toyyyy=2024&tomm=12&todd=31&hidden_fromyyyy=2024&hidden_frommm=1&hidden_fromdd=1&hidden_toyyyy=2024&hidden_tomm=12&hidden_todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h1 style="font-size: 2.5em ">💙 na keszach z 2024 w Małopolsce</h1>
+                <div class="chart">
+                    <canvas data-chart="bar">
+                        Kesz, GCAHKRK Kraków's GeoCachers Welcome You!, GCAJJKX Smok 🐉 The dragon, GCAGHD7 Echo, GCAKRAN Karmelicka Street, GCAM3RJ Skład Solny
+                        Liczba znalezień, 172, 134, 95, 75, 37
+                    </canvas>
+                </div>
+                <div class="source">
+                    <a href="https://project-gc.com/Statistics/TopFav?country=Poland&region=Ma%C5%82opolskie&hidden_fromyyyy=2024&hidden_frommm=1&hidden_fromdd=1&hidden_toyyyy=2024&hidden_tomm=12&hidden_todd=31&submit=Filter"
+                       target="_blank">
+                        źródło
+                    </a>
+                </div>
+            </section>
         </section>
 
         <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
@@ -362,8 +601,12 @@
 <!-- Chart plugin -->
 <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chart/plugin.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
 <script>
+
+    Chart.register(ChartDataLabels);
+
     Reveal.initialize({
         width: 1280,
         height: 1050,
@@ -387,6 +630,16 @@
                     // ticks: { stepSize: 1 },
                     grid: {color: "#333333"}, // color of grid lines
                 },
+                plugins: {
+                    datalabels: {
+                        anchor: 'end',
+                        align: 'top',
+                        formatter: Math.round,
+                        font: {
+                            weight: 'bold'
+                        }
+                    }
+                }
             },
             line: {
                 borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"],
@@ -394,16 +647,7 @@
             },
             bar: {backgroundColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"]},
             pie: {backgroundColor: [["rgba(0,0,0,.8)", "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"]]},
-            plugins: {
-                legend: {
-                    labels: {
-                        // This more specific font property overrides the global property
-                        font: {
-                            size: 34
-                        }
-                    }
-                }
-            }
+
         },
     });
 </script>
