@@ -3439,6 +3439,15 @@
             pie: {backgroundColor: [["rgba(0,0,0,.8)", "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"]]},
 
         },
+        multiplex: {
+            secret: '17360681015334246426', // null so the clients do not have control of the master presentation
+            id: '75d179b77ef2f85d', // id, obtained from socket.io server
+            url: 'https://reveal-multiplex.glitch.me/' // Location of socket.io server
+        },
+        dependencies: [
+            {src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true},
+            {src: 'https://reveal-multiplex.glitch.me/master.js', async: true}
+        ]
     });
 </script>
 
